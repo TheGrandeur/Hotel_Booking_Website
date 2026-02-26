@@ -7,10 +7,14 @@
 👥 Team: InnovateX
 
 Team Members:
-	1. Vaibhav Gupta: Backend (Hotel_Service)
-	2. Samyank: Security and Gateway
-	3. Deepesh Shukla: Frontend
-	4. Amresh Kumar: Backend (User_Service)
+	Vaibhav Gupta: Backend (Hotel_Service)
+	
+	Samyank: Security and Gateway
+	
+	Deepesh Shukla: Frontend
+	
+	Amresh Kumar: Backend (User_Service)
+	
 
 Hackathon: HCLTech Hackathon 2026
 
