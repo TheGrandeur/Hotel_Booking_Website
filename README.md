@@ -13,7 +13,9 @@ Team Members:
 	•	Deepesh Shukla
 
 Hackathon: HCLTech Hackathon 2026
+
 Location: Galgotias University
+
 Date: 26 February 2026
 
 📌 Project Overview
