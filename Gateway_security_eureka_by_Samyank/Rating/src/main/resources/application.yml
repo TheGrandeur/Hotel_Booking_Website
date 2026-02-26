@@ -1,0 +1,21 @@
+spring:
+  mongodb:
+    uri: mongodb+srv://sam:sam12345@cluster0.tkx20x9.mongodb.net/SpringBoot
+  data:
+    mongodb:
+      auto-index-creation: true
+  cloud:
+    config:
+      enabled: false      
+
+server:
+  port: 8083
+  
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8080/eureka

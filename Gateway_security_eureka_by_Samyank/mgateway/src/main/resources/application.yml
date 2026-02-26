@@ -1,0 +1,30 @@
+server:
+    port: 8085
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        fetch-registry: true
+        registry-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8002/eureka
+spring:
+    cloud:
+      gateway:
+          server:
+             webflux:
+               routes:
+                  - id: hotel-service
+                    uri: lb://HOTELSERVICE
+                    predicates:
+                         - Path=/hotels/**
+                         
+                  - id: user-service
+                    uri: lb://USERSERVICE
+                    predicates:
+                        - Path=/users/**
+                        
+                  - id: demo
+                    uri: lb://HCLDEMO
+                    predicates:
+                        - Path=/testing/**

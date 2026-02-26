@@ -1,0 +1,24 @@
+server:
+  port: 8084
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+spring:
+  cloud:
+     gateway:
+          routes:
+            - id: hotel-service
+              uri: lb://HOTELSERVICE
+              predicates:
+                - Path=/hotels/**
+
+            - id: user-service
+              uri: lb://USERSERVICE
+              predicates:
+                - Path=/users/**
+
+            - id: rating-service
+              uri: lb://RATINGS
+              predicates:
+                - Path=/ratings/**
